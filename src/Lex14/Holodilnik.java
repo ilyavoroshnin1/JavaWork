@@ -21,7 +21,16 @@ public class Holodilnik {
         }
     }
 
-    public void getProduct(String product, int value){
-
+    public void getProduct(String product, int value) {
+        if (!products.containsKey(product)) {
+            System.out.println("Такого продукта в холодильнике нет");
+            return;
+        }
+        int currentValue = products.get(product);
+        if (currentValue < value) {
+            System.out.println("Такого продукта в холодильнике недостаточно");
+            return;
+        }
+        products.put()
     }
 }

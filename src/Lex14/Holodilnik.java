@@ -31,6 +31,6 @@ public class Holodilnik {
             System.out.println("Такого продукта в холодильнике недостаточно");
             return;
         }
-        products.put()
+//        products.put()
     }
 }
